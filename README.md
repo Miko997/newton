@@ -168,14 +168,20 @@ If you run the examples from a source checkout with uv, use
         <img width="320" src="https://raw.githubusercontent.com/newton-physics/newton/main/docs/images/examples/example_basic_mimic_joint.jpg" alt="Mimic Joint">
       </a>
     </td>
-    <td width="33%"></td>
+    <td align="center" width="33%">
+      <a href="newton/examples/basic/example_basic_contact_roundoff.py">
+        <img width="320" src="docs/images/examples/example_basic_contact_roundoff.jpg" alt="Contact Roundoff">
+      </a>
+    </td>
     <td width="33%"></td>
   </tr>
   <tr>
     <td align="center" width="33%">
       <code>python -m newton.examples basic_mimic_joint</code>
     </td>
-    <td width="33%"></td>
+    <td align="center" width="33%">
+      <code>python -m newton.examples basic_contact_roundoff --viewer null</code>
+    </td>
     <td width="33%"></td>
   </tr>
   <tr>

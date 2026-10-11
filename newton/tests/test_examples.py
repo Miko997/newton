@@ -559,6 +559,13 @@ add_basic_example_test(
     allow_output_regexes=[(_WARP_SDF_CONSTANT_CONVERSION_WARNING_RE, "stderr")],
 )
 add_basic_example_test(
+    name="basic.example_basic_contact_roundoff",
+    devices=test_devices,
+    use_viewer=True,
+    test_options={"num-frames": 2, "world-count": 1, "layers": 1, "repeats": 2},
+    expect_output_regexes=[r'\{"body_count": 16, [^\n]+"repeats": 2\}\n?'],
+)
+add_basic_example_test(
     name="basic.example_basic_shapes",
     devices=cuda_test_devices,
     use_viewer=True,
